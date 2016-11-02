@@ -1,0 +1,29 @@
+html {
+    font-size: 62.5%; /*62.5% * 16px = 10px*/
+}
+
+@media (min-width: 20rem) {
+    html {
+        font-size: 200%; /* 200% of 16px = 32px */
+    }
+}
+
+@media (min-width: 30rem) {
+    html {
+        background-color: lightblue;
+        font-size: 300%; /* 300% of 16px = 30px */
+    }
+}
+
+body {
+    font-size: 14px; /*防止不支持rem*/
+    font-size: 1.4rem; /*1.4 * 10px = 14px, rem属性是根据html的size为基准*/
+}
+
+ul {
+    border-bottom: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
